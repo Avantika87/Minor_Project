@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Recommended Tools</title>
+    <link rel="stylesheet" type="text/css" href="/static/recommend.css">
+
+</head>
+<body>
+    <div class="container">
+        <button onclick="goBack()" style="background-color: #0074D9; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer; position: absolute; left: 20px; top: 20px;">Go Back</button>
+        <script>
+        function goBack() {
+        window.history.back();
+        }
+        </script>
+    <h1>Recommended Tools</h1>
+    <table>
+        <tr>
+            <th>AI Tool Name</th>
+            <th>Free/Paid/Other</th>
+            <th>Charges</th>
+            <th>Languages</th>
+            <th>Major Category</th>
+            <th>Tool Link</th>
+            <th>Description</th>
+        </tr>
+        {% for tool in tools%}
+        <tr>
+            <td>{{ tool['AI Tool Name'] }}</td>
+            <td>{{ tool['Free/Paid/Other'] }}</td>
+            <td>${{ tool['Charges'] }}</td>
+            <td>{{ tool['Languages'] }}</td>
+            <td>{{ tool['Major Category'] }}</td>
+            <td><a href = '{{ tool['Tool Link'] }}' target="blank"> Link </a></td>
+            <td>{{ tool['Description'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+</body>
+</html>

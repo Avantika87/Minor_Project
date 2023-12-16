@@ -1,0 +1,60 @@
+body {
+    background-image: url('/static/back.jpg'); /* Replace with the actual path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 50px; /* Add padding for space from the sides */
+    
+}
+h1{
+    color: white;
+}
+
+
+/* Style the table */
+table {
+    border-collapse: collapse;
+    width: 100%;
+    background-color: #fff;
+    border: 1px solid #ddd;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #007BFF;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Add this style to your existing CSS file */
+.button-goback {
+    background-color: #0074D9; /* Change the background color to your preference */
+    color: white; /* Change the text color to your preference */
+    padding: 10px 20px; /* Adjust the padding as needed */
+    border: none;
+    border-radius: 5px; /* Add rounded corners */
+    cursor: pointer;
+}
+
+.button-goback:hover {
+    background-color: #0056A5; /* Change the hover background color to your preference */
+}

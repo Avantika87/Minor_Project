@@ -1,0 +1,120 @@
+body {
+    font-family:'Times New Roman', Times, serif;
+    text-align: center;
+    background-image: url(/static/back.jpg);
+    margin: 0;
+    background-size: cover; /* Cover the entire screen */
+    background-position: center; /* Center the background image */
+    padding: 0;
+    font-size: larger;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Horizontally center the container */
+    align-items: flex-end; /* Vertically center the container */
+    height: 100vh; /* Take up the full viewport height */
+    
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 500px;
+    height: 550px;
+    max-width: 600px;
+    background-image: url(/static/Contain.png);
+    background-position: center;
+    background-size: cover;
+    padding: 20px;
+    border-radius: 45px;
+    box-shadow: 0 0 90px white;
+    margin-left: 0px;
+    margin-right: 40px;
+    
+}
+
+/* Style the page title */
+h1 {
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+/* Style labels for form elements */
+
+/* Style text input, select, range input, and output elements */
+input[type="text"],
+select,
+input[type="range"],
+output {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+
+/* Style the select element's height */
+select {
+    height: 35px;
+}
+
+/* Style the range input's height */
+input[type="range"] {
+    height: 20px;
+}
+
+/* Style the submit button */
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+/* Style the submit button on hover */
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.element1.left label {
+    color: white;
+    font-size: 24px;
+}
+/* Style the textarea to make it slightly bigger and wrap text */
+.element1.left textarea {
+    width: 100%;
+    color: white;
+    font-size: large;
+    background-color: transparent;
+    padding: -11px;
+    border: 3px solid white;
+    border-radius: 5px;
+    resize: vertical; /* Allow vertical resizing */
+    overflow-y: auto; /* Show scrollbar when content exceeds textarea height */
+}
+
+.element2-3-container {
+    color: white;
+    display: flex; /* Make the container a flex container */
+    justify-content: space-between; /* Place elements at each end of the container */
+    align-items: center; /* Center elements vertically within the container */
+}
+
+.element2, .element3 {
+    flex: 1; /* Allow elements to grow and take equal space within the container */
+    margin: 0 50px; /* Add some spacing between them */
+    font-size: 22px;
+}
+.element3{
+    margin-top: 20px;
+}
+label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center; /* Center the label text horizontally */
+}

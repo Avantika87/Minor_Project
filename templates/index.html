@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Tools Recommender</title>
+    <link rel="stylesheet" type="text/css" href="/static/style.css">
+</head>
+<body>   
+    <form method="post" action = '/recommend'>
+        <div class="container">
+        <h1>Welcome to the AI Tools Recommender!</h1>
+        
+        <div class="element1 left">
+            <label for="description">Enter Description:</label>
+            <textarea id="description" name="description" rows="4" cols="51" required></textarea>
+        </div>
+        <div class = "element2-3-container">
+
+            <div class="element2">
+                <label for="payment_option">Select Payment Option:</label>
+                <select name="payment_option" id="payment_option" name="payment_option">
+                    <option value="All">All</option>
+                    <option value="Free">Free</option>
+                    <option value="Paid">Paid</option>
+                </select>
+            </div>
+            
+            <div class="element3">
+                <label for="budget">Select Budget ($):</label>
+                <input type="range" name="budget" id="budget" min="0" max="300" step="1">
+                <output for="budget" id="budgetValue">0</output>
+            </div>
+        </div>
+            
+        <div class="element4"><br>
+            <input type="submit" value="Submit">
+        </form>
+        </div>
+    </div>
+</body>
+<script>
+    var budgetSlider = document.getElementById('budget');
+    var budgetValue = document.getElementById('budgetValue');
+
+    budgetSlider.addEventListener('input', function() {
+        budgetValue.textContent = budgetSlider.value;
+    });
+</script>
+</html>
+
+
+
+
+
